@@ -22,5 +22,5 @@ class Audiobook.Views.StoryShow.NewDetail.NewFBPhotoDetails extends Backbone.Vie
       $('#fb_preview').html('')
       $('#fb_preview').text('no photos QAQ') unless res.photos
       res.photos["data"].forEach (photo) ->
-        view = new Audiobook.Views.StoryShow.NewDetail.FBPhotoDetail({model:photo, collection: self.collection})
+        view = new Audiobook.Views.StoryShow.NewDetail.NewFBPhotoDetail({model:photo, collection: self.collection})
         $('#fb_preview').append(view.render().el)

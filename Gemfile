@@ -12,8 +12,8 @@ gem 'backbone-on-rails'
 gem 'rabl'
 gem 'rmagick'
 gem 'carrierwave'
-gem 'therubyracer'
-# gem 'chosen-rails'
+gem 'chosen-rails'
+
 
 
 group :development, :test do
