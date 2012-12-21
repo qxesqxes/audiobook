@@ -14,7 +14,7 @@ gem 'rmagick'
 gem 'carrierwave'
 gem 'therubyracer'
 
-123
+1qweqw23
 
 group :development, :test do
   gem 'sqlite3', '1.3.5'
