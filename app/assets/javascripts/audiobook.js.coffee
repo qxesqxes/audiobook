@@ -7,5 +7,5 @@ window.Audiobook =
     window.AudiobookApp =  new Audiobook.Routers.Stories()
     Backbone.history.start({pushState: true})
 
-$(document).ready ->
-  Audiobook.init()
+# $(document).ready ->
+#   Audiobook.init()
