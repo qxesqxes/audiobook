@@ -12,6 +12,8 @@ gem 'backbone-on-rails'
 gem 'rabl'
 gem 'rmagick'
 gem 'carrierwave'
+gem 'chosen-rails'
+
 
 
 group :development, :test do
