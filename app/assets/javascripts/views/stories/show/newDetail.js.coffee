@@ -13,9 +13,11 @@ class Audiobook.Views.StoryShow.NewDetail extends Backbone.View
     newTextDetailView = new Audiobook.Views.StoryShow.NewDetail.NewTextDetail({collection: @collection})
     newPhotoDetailView = new Audiobook.Views.StoryShow.NewDetail.NewPhotoDetail({collection: @collection})
     newVoiceDetailView = new Audiobook.Views.StoryShow.NewDetail.NewVoiceDetail({collection: @collection})    
+    newFBPhotoDetailViews = new Audiobook.Views.StoryShow.NewDetail.NewFBPhotoDetails({collection: @collection})    
     @$('#new_detail_modal').append(newTextDetailView.render().el)
     @$('#new_detail_modal').append(newPhotoDetailView.render().el)
     @$('#new_detail_modal').append(newVoiceDetailView.render().el)
+    @$('#new_detail_modal').append(newFBPhotoDetailViews.render().el)
     this  
 
   addPhotoDetail: (e) ->

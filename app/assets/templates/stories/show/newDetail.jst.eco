@@ -3,4 +3,5 @@
 <button class="btn" id="add_voicedetail">說說話</button>
 
 <div id="new_detail_modal">
+</div>
 
