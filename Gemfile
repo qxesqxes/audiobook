@@ -13,6 +13,7 @@ gem 'rabl'
 gem 'rmagick'
 gem 'carrierwave'
 gem 'therubyracer'
+# gem 'chosen-rails'
 
 
 group :development, :test do

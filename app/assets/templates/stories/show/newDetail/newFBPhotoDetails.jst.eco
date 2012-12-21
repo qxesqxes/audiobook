@@ -1,1 +1,2 @@
-123
+<select id="fb_album"></select>
+<div id="fb_preview"></div>
