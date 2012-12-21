@@ -1,2 +1,2 @@
 object @detail
-attributes :user_id, :story_id, :id, :type, :name, :description, :photo, :remote_photo_url, :chapter_id
+attributes :user_id, :story_id, :id, :type, :name, :description, :photo, :remote_photo_url, :chapter_id, :pid
