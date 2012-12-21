@@ -13,6 +13,7 @@ gem 'rabl'
 gem 'rmagick'
 gem 'carrierwave'
 gem 'therubyracer'
+heloo
 
 group :development, :test do
   gem 'sqlite3', '1.3.5'
