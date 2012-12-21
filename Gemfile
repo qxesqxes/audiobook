@@ -15,7 +15,7 @@ gem 'carrierwave'
 gem 'therubyracer'
 heloo
 
-123
+12tyg3
 
 group :development, :test do
   gem 'sqlite3', '1.3.5'
