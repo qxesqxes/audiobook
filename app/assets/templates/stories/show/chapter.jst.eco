@@ -1,0 +1,19 @@
+<div class="chapter_info">
+  <% if @chapter.get("name"): %>
+  <h2 class="chapter_name"><a href="#" class="remove_chapter">x</a><%= @chapter.get("name") %></h2>
+  <% else: %>
+  <h2 class="chapter_name"><a href="#" class="remove_chapter">x</a>Undefined Name <%= @chapter.id %></h2>
+  <% end %>
+</div>
+<div class="chapter_container">            
+  <div class="row">
+    <ul id="details-<%= @chapter.id %>"></ul>
+    <div class="span imgs_typeA" style="background-image: url(../assets/photos/1.jpg); background-size: 100% auto;" href="#myModal" role="button" data-toggle="modal">
+      <div class="icon_bar">
+        <button class="icon_button" type="button"><i class="icon-music"></i> 2</button>
+        <button class="icon_button" type="button"><i class="icon-heart"></i> 5</button>
+        <button class="icon_button" type="button"><i class="icon-comment"></i> 3</button>
+      </div>
+    </div> 
+  </div>      
+</div>

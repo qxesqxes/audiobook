@@ -1,0 +1,38 @@
+<div id="create_story_modal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3>建立大卡片</h3>
+  </div>
+  <div class="modal-body custom-height-modal">
+    <form class="form-horizontal">
+      <div class="control-group">
+        <label class="control-label">名稱</label>
+        <div class="controls">
+          <input id="new_story_name" type="string">
+        </div>
+      </div>
+      <div class="control-group">
+        <label class="control-label">描述</label>
+        <div class="controls">
+          <input id="new_story_description" type="string">
+        </div>
+      </div>
+      <div class="control-group">
+        <label class="control-label">開始</label>
+        <div class="controls">
+          <input id="new_story_started_at" type="date">
+        </div>
+      </div>
+      <div class="control-group">
+        <label class="control-label">結束</label>
+        <div class="controls">
+          <input id="new_story_ended_at" type="date">
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+    <button id="submit_new_story" class="btn btn-primary">Save changes</button>
+  </div>
+</div>

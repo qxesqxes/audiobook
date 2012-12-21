@@ -1,0 +1,17 @@
+<div id="theme_photo">
+  <img src="/assets/photos/theme.jpg">
+</div>
+<img id="big_head" src="/assets/photos/big_head.jpg">
+<div id="friends" class="btn">
+  <h4>Friends
+    <img src="/assets/rails.png">
+    <img src="/assets/photos/big-head/light.jpg">
+    <img src="/assets/photos/big-head/rain.jpg">
+    <img src="/assets/photos/big-head/donny.jpg">
+    <img src="/assets/photos/big-head/iris.jpg">            
+    <img src="/assets/photos/big-head/bear.png">
+  </h4>
+</div>    
+<h3><a id="create_story" href="#create_story_modal" role="button" class="btn btn-large btn-primary" data-toggle="modal">新增珍貴回憶</a></h3>
+
+

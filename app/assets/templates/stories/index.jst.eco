@@ -1,0 +1,14 @@
+<li class="span3">
+  <a href="/stories/<%=  @story.get('id') %>" >
+    <div class="thumbnail">
+      <img src="http://i.imgur.com/D4Ecl.jpg" class="event_pic">
+      <h3>name: <%= @story.get("name") %><a href="#" class="remove_story">x</a></h3>
+      <p>description: <%= @story.get("description") %></p>	  
+    </div>
+  </a>
+</li>  
+
+
+
+
+

@@ -1,0 +1,2 @@
+<a href="#" class="remove_detail">x</a> <em>this is photo: </em><%= @detail.get('name') %>
+<img src="<%= @detail.get('photo').photo.url %>">

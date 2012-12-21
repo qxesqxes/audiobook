@@ -1,0 +1,14 @@
+<div id="story_info" class="hero-unit">
+  <h2><%= @story.get("name") %></h2>
+  <p>description: <%= @story.get("description") %></p>
+  <p class="btn">started_at: <%= @story.get("started_at") %></p>
+  <p class="btn">ended_at: <%= @story.get("ended_at") %></p>
+  <ul class="participants">
+    <button id="add_participant" class="btn btn-large btn-primary">邀請更多朋友進來!</button>
+  </ul>
+</div>
+<div class="addContent">
+  <button class="btn" id="add_chapter">新增一個主題!</button>  
+</div>
+<div class="chaptersContent">  
+</div>

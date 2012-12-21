@@ -1,0 +1,28 @@
+
+
+<!-- <div id="create_voice_detail_modal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3>新增描述</h3>
+  </div>
+  
+
+  <div class="modal-body custom-height-modal"> -->
+
+
+    <div id="recorderUI" class="reset">
+      <a href="#" id="controlButton" class="record"><span id="timer" class="hidden">0:00</span></a>
+      <div id="otherControls">
+        <a href="#" id="reset" class="button">Reset</a>
+        <a href="#" id="upload" class="button">Upload</a>
+      </div>
+      <div id="uploadStatus"></div>
+    </div>
+
+<!--   </div>
+  <div class="modal-footer">
+    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+    <button id="submit_new_voicedetail" class="btn btn-primary">Save changes</button>
+  </div>
+</div> -->

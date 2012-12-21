@@ -1,0 +1,1 @@
+<a href="#" class="remove_detail">x</a> <em>this is text: </em><%= @detail.get('description') %>
