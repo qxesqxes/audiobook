@@ -7,7 +7,7 @@ class Audiobook.Views.StoryShow.NewDetail.NewFBPhotoDetail extends Backbone.View
     'click img': 'selectPhoto'
 
   initialize: (options)->
-    @wishes = options.collection
+    @chapters = options.collection
 
 
   selectPhoto: (e) ->
@@ -15,8 +15,8 @@ class Audiobook.Views.StoryShow.NewDetail.NewFBPhotoDetail extends Backbone.View
     console.log @wishes
     attributes = 
       pid: @model.id
-      type: "Fbphotowish"
-      chapter_id: @wishes.chapter_id
+      type: "Fbphotodetail"
+      chapter_id: $('#new_fbphotodetail_chapter').val()
     @wishes.create attributes,
       wait:true
       success: (story) ->

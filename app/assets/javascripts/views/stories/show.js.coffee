@@ -20,11 +20,12 @@ class Audiobook.Views.StoryShow extends Backbone.View
   render: ->
     $(@el).html(@template(story: @model))
     @model.participants.each(@appendParticipant)    
-    @model.chapters.each(@appendChapter) 
+    @model.chapters.each(@appendChapter)
     newChapterView = new Audiobook.Views.StoryShow.NewChapter({collection: @model.chapters})        
     newDetailView = new Audiobook.Views.StoryShow.NewDetail({collection: @model.chapters})    
     @$('.addContent').append(newChapterView.render().el)
-    @$(".addContent").append(newDetailView.render().el)    
+    @$(".addContent").append(newDetailView.render().el)
+
     this
 
  

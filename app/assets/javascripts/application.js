@@ -15,6 +15,7 @@
 //= require jquery-fileupload
 //= require bootstrap
 //= require underscore
+//= require chosen-jquery
 //= require backbone
 //= require .//audiobook
 //= require .//facebook

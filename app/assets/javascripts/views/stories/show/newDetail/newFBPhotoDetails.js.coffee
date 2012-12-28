@@ -6,12 +6,14 @@ class Audiobook.Views.StoryShow.NewDetail.NewFBPhotoDetails extends Backbone.Vie
     'change select' : 'selectAlbum'
 
   render: ->
-    $(@el).html(@template())
+    console.log "8"
+    $(@el).html(@template({chapters: @collection}))
     FB.api "/me?fields=albums.limit(500).fields(name)", (res) ->
       console.log res
       res.albums["data"].forEach (album) ->
         $('#fb_album').append('<option value="'+album["id"]+'">'+album["name"]+'</option>')
         # $('#fb_album').chosen()
+    console.log "9"
     this
 
   selectAlbum: ->

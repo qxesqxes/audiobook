@@ -1,4 +1,4 @@
-<!-- photodetail  -->
+<!-- fbphotodetail  -->
 <div id="create_photo_detail_modal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-header">
     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
@@ -9,7 +9,7 @@
       <label class="control-label">chose chapter</label>
       <div class="controls">
         <div class="input">
-          <select id="new_textdetail_chapter" row="8">
+          <select id="new_fbphotodetail_chapter" row="8">
             <% for chapter in @chapters.models: %>
             <option value=<%= chapter.id %>> <%= chapter.get('name') %> </option>
             <% end %>
