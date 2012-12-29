@@ -1,2 +1,30 @@
-<a href="#" class="remove_detail">x</a> <em>this is photo: </em><%= @detail.get('name') %>
-<img src="<%= @detail.get('photo').photo.url %>">
+<a href="#" class="remove_detail">x</a> 
+<em>this is photo: </em><%= @detail.get('name') %>
+<!-- <a href="#myModal" role="button" data-toggle="modal" > -->
+  <img src="<%= @detail.get('photo').photo.url %>">
+<!-- </a> -->
+<!-- 
+<div class="modalphoto modal hide" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" >
+      
+      <div class="modalphoto-body-carousel modal-body span13">        
+        
+        <div id="myCarousel" class="carouselphoto carousel slide ">
+          
+          <div class="carousel-inner">
+            <div class="active item"><img src="<%= @detail.get('photo').photo.url %>"></div>   
+          </div>
+          
+          <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+          <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+        </div>
+      </div>
+      <div class="modalphoto-body-content modal-body ">
+        <h3>7-11, we are doing something :)</h3>        
+        <p>Our Boracay was so happy ^____^</p>
+      </div>
+      <div class="modalphoto-footer modal-footer">
+        <button class="btn btn-danger" id="record-button"><i class="icon-play"></i></button>
+        <button class="btn btn-danger" id="record-button"><i class="icon-pause"></i></button>
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>        
+      </div>
+    </div> -->

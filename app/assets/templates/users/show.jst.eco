@@ -12,6 +12,6 @@
     <img src="/assets/photos/big-head/bear.png">
   </h4>
 </div>    
-<h3><a id="create_story" href="#create_story_modal" role="button" class="btn btn-large btn-primary" data-toggle="modal">新增珍貴回憶</a></h3>
+<h3><a href="#create_story_modal" role="button" class="btn btn-large btn-primary" data-toggle="modal">新增珍貴回憶</a></h3>
 
 

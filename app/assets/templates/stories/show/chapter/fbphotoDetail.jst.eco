@@ -1,0 +1,31 @@
+<a href="#" class="remove_detail">x</a>
+<!-- <a href="#myFBModal" role="button" data-toggle="modal" > -->
+  <img src="<%= @res.source %>">
+<!-- </a> -->
+
+
+<!-- <div class="modalphoto modal hide" id="myFBModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" > -->
+      
+      <!-- <div class="modalphoto-body-carousel modal-body span13">         -->
+        <!-- Carousel of Bootstrap -->
+        <!-- <div id="myCarousel" class="carouselphoto carousel slide "> -->
+          <!-- Carousel items -->
+          <!-- <div class="carousel-inner"> -->
+            <!-- <div class="active item"><img src="<%= @res.source %>"></div>    -->
+          <!-- </div> -->
+          <!-- Carousel nav -->
+     <!--      <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+          <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+        </div>
+      </div>
+      <div class="modalphoto-body-content modal-body ">
+        <h3>7-11, we are doing something :)</h3>        
+        <p>Our Boracay was so happy ^____^</p>
+      </div>
+      <div class="modalphoto-footer modal-footer">
+        <button class="btn btn-danger" id="record-button"><i class="icon-play"></i></button>
+        <button class="btn btn-danger" id="record-button"><i class="icon-pause"></i></button>
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>        
+      </div>
+    </div>
+ -->

@@ -1,6 +1,8 @@
 <button class="btn" id="add_photodetail">來張照片吧!</button>
 <button class="btn" id="add_textdetail">新增描述</button>
 <button class="btn" id="add_voicedetail">說說話</button>
+<button class="btn" id="add_FBphotodetail">從FB匯入照片吧</button>
+<button class="btn" id="add_APPphotodetail">從APP匯入照片吧</button>
 
 <div id="new_detail_modal">
 </div>

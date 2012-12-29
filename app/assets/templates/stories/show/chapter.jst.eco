@@ -8,12 +8,37 @@
 <div class="chapter_container">            
   <div class="row">
     <ul id="details-<%= @chapter.id %>"></ul>
-    <div class="span imgs_typeA" style="background-image: url(../assets/photos/1.jpg); background-size: 100% auto;" href="#myModal" role="button" data-toggle="modal">
-      <div class="icon_bar">
-        <button class="icon_button" type="button"><i class="icon-music"></i> 2</button>
-        <button class="icon_button" type="button"><i class="icon-heart"></i> 5</button>
-        <button class="icon_button" type="button"><i class="icon-comment"></i> 3</button>
-      </div>
-    </div> 
+    
   </div>      
 </div>
+
+<div class="modalphoto modal hide" id="myFBModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" >
+      
+      <div class="modalphoto-body-carousel modal-body span13">        
+        <!-- Carousel of Bootstrap -->
+        <div id="myCarousel" class="carouselphoto carousel slide ">
+          <!-- Carousel items -->
+          <div class="carousel-inner">            
+            <% for detail in @chapter.details.models: %>
+              <div class="item ">
+              <%= detail.get('id') %> 
+              <%= console.log detail.get('id') %>
+              </div>   
+            <% end %>            
+          </div>
+          <!-- Carousel nav -->
+          <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+          <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+        </div>
+      </div>
+      <div class="modalphoto-body-content modal-body ">
+        <h3>7-11, we are doing something :)</h3>        
+        <p>Our Boracay was so happy ^____^</p>
+      </div>
+      <div class="modalphoto-footer modal-footer">
+        <button class="btn btn-danger" id="record-button"><i class="icon-play"></i></button>
+        <button class="btn btn-danger" id="record-button"><i class="icon-pause"></i></button>
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>        
+      </div>
+    </div>
+

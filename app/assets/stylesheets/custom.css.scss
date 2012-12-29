@@ -188,3 +188,34 @@ div.button_inside_border_blue:active{
   margin-right: 5px;
   float: left;
 }
+
+
+/*modalphoto*/
+.modalphoto{
+  top: 5%;
+  left: 5%;
+  width: 90%; 
+  /*max-height: 575px;*/
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+} 
+.modalphoto-body-carousel{
+  width: 72%;
+  max-height: 900px;
+  
+  margin: 0px 0px -20px -2px;
+  padding: 0px 10px 0px 0px;
+  overflow-y: auto;
+}
+.carouselphoto{
+  margin-bottom: 0px;
+
+}
+
+.modalphoto-body-content{
+  width: 25%;
+  max-height: 900px;      
+  margin-left: 10px;
+  padding: 0px 0px 0px 2px;
+  overflow-y: auto;
+}

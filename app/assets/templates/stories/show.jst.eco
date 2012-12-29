@@ -1,4 +1,5 @@
 <div id="story_info" class="hero-unit">
+  <img src="/assets/rails.png">
   <h2><%= @story.get("name") %></h2>
   <p>description: <%= @story.get("description") %></p>
   <p class="btn">started_at: <%= @story.get("started_at") %></p>

@@ -3,17 +3,24 @@ class Audiobook.Views.StoryShow.NewDetail.NewFBPhotoDetails extends Backbone.Vie
 
   events:
     # 'click #submit_new_fbphotowish': 'submitFBPhotoWish'
-    'change select' : 'selectAlbum'
+    'change select#fb_album' : 'selectAlbum'
+
+  initialize: ->
+    @collection.on('add', @updateSelect, this)
+    @collection.on('remove', @updateSelect, this)
+
+
+  updateSelect: =>
+    @$('#new_FBphotodetail_chapter').html("")
+    @collection.forEach (chapter) ->
+      @$('#new_FBphotodetail_chapter').append("<option value=" + chapter.id + ">" + chapter.get('name') + "</option>")
 
   render: ->
-    console.log "8"
     $(@el).html(@template({chapters: @collection}))
-    FB.api "/me?fields=albums.limit(500).fields(name)", (res) ->
-      console.log res
+    FB.api "/me?fields=albums.limit(500).fields(name)", (res) ->      
       res.albums["data"].forEach (album) ->
         $('#fb_album').append('<option value="'+album["id"]+'">'+album["name"]+'</option>')
         # $('#fb_album').chosen()
-    console.log "9"
     this
 
   selectAlbum: ->

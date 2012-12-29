@@ -1,6 +1,6 @@
-class Audiobook.Views.StoryShow.PhotoDetail extends Backbone.View
+class Audiobook.Views.StoryShow.FBPhotoDetail extends Backbone.View
 
-  template: JST['stories/show/chapter/photoDetail']
+  template: JST['stories/show/chapter/fbphotoDetail']
   tagName: 'li'
 
   events:
@@ -11,8 +11,11 @@ class Audiobook.Views.StoryShow.PhotoDetail extends Backbone.View
     @model.on('destroy', @close, this)
 
 
-  render: ->    
-    $(@el).html(@template(detail: @model))
+  render: ->
+    self = this 
+    FB.api '/' + @model.get("pid") + '?fields=source,link', (res) ->      
+      $(self.el).html(self.template({res: res}))
+
     this
 
   removeDetail: (e) ->
@@ -23,5 +26,3 @@ class Audiobook.Views.StoryShow.PhotoDetail extends Backbone.View
     this.remove()
     this.unbind()
     this.model.unbind("change", this.modelChanged)
-
-

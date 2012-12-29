@@ -1,15 +1,15 @@
-<!-- photodetail  -->
-<div id="create_photo_detail_modal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<!-- FBphotodetail  -->
+<div id="create_FBphoto_detail_modal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-header">
     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-    <h3>新增相片</h3>
+    <h3>新增FB相片</h3>
   </div>
   <div class="modal-body custom-height-modal">
     <div class="control-group">
       <label class="control-label">chose chapter</label>
       <div class="controls">
         <div class="input">
-          <select id="new_textdetail_chapter" row="8">
+          <select id="new_FBphotodetail_chapter" row="8">
             <% for chapter in @chapters.models: %>
             <option value=<%= chapter.id %>> <%= chapter.get('name') %> </option>
             <% end %>
@@ -24,12 +24,8 @@
       </div>
     </div>
     <form id="add_photodetail_form" enctype="multipart/form-data" class="form-horizontal">
-      <div class="control-group">
-        <label class="control-label">檔案</label>
-        <div class="controls">
-          <input id="new_photodetail_photo" name="detail[photo]" type="file">
-          <div id="fb_preview"></div>
-        </div>
+      <div class="control-group">        
+        <div id="fb_preview"></div>        
       </div>      
     </form>
   </div>

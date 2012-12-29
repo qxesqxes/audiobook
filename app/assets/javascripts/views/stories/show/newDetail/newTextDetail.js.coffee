@@ -25,6 +25,7 @@ class Audiobook.Views.StoryShow.NewDetail.NewTextDetail extends Backbone.View
     @collection.get({id:chapter_id}).details.create attributes,
       wait:true
       success: (story) ->
+        $('#create_text_detail_modal').modal('toggle')
         # window.location.assign('/stories/' + story.id )
         # location.reload()
       error: (story, msg) ->

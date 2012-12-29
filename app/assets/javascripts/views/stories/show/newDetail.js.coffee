@@ -7,6 +7,7 @@ class Audiobook.Views.StoryShow.NewDetail extends Backbone.View
     'click #add_photodetail': 'addPhotoDetail'
     'click #add_textdetail': 'addTextDetail'
     'click #add_voicedetail': 'addVoiceDetail'    
+    'click #add_FBphotodetail': 'addFBphotoDetail'    
 
   render: ->
     $(@el).html(@template())
@@ -28,6 +29,9 @@ class Audiobook.Views.StoryShow.NewDetail extends Backbone.View
 
   addVoiceDetail: (e) ->
     @$('#create_voice_detail_modal').modal('toggle')
+
+  addFBphotoDetail: (e) ->
+    @$('#create_FBphoto_detail_modal').modal('toggle')
 
 
   removeDetail: (e) ->

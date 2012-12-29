@@ -7,27 +7,33 @@
 				<li><%= link_to "Mysapce", current_user %></li>
 				<li><a href="#">Friends</a></li>
 			</ul>			
-			<div id="user_nav" class="btn-group pull-right">				
-				<% if current_user %>
-					<a class="btn btn-inverse dropdown-toggle" data-toggle="dropdown" >
-						<img src=<%= current_user.picture %> id="current_user_picture">	
-						<%= current_user.name %>
-						<span class="caret"></span>					
-					</a>
-					<ul class="dropdown-menu">
-						<li><a href="#">Profile</a></li>
-						<li class="divider"></li>						
-						<li><%= link_to "Sign out", logout_path, id: "log_out" %></li>		
-					</ul>
-				<% else %>
-					<button class="btn btn-inverse">
-					<%= link_to "Sign in with Facebook", "/auth/facebook", id: "log_in" %>
-					</button>
-				<% end %>				
-			</div>
-			<form class="navbar-search pull-right">
+			<form class="navbar-search pull-left">
 				<input type="text" class="search-query" placeholder="Search">
 			</form>
+			<ul class="nav pull-right">
+				<li><a href="#">通知</a></li>
+				<li class=" divider-vertical"></li>
+				<li class="dropdown">
+					<div id="user_nav" class="btn-group pull-right">				
+						<% if current_user %>
+							<a class="btn btn-inverse dropdown-toggle" data-toggle="dropdown" >
+								<img src=<%= current_user.picture %> id="current_user_picture">	
+								<%= current_user.name %>
+								<span class="caret"></span>					
+							</a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Profile</a></li>
+								<li class="divider"></li>						
+								<li><%= link_to "Sign out", logout_path, id: "log_out" %></li>		
+							</ul>
+						<% else %>
+							<button class="btn btn-inverse">
+							<%= link_to "Sign in with Facebook", "/auth/facebook", id: "log_in" %>
+							</button>
+						<% end %>				
+					</div>
+				</li>	
+			</ul>
 		</div>
 	</div>
 </div>

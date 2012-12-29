@@ -5,19 +5,21 @@
     <h3>新增相片</h3>
   </div>
   <div class="modal-body custom-height-modal">
-    <div class="control-group">
-      <label class="control-label">chose chapter</label>
-      <div class="controls">
-        <div class="input">
-          <select id="new_fbphotodetail_chapter" row="8">
-            <% for chapter in @chapters.models: %>
-            <option value=<%= chapter.id %>> <%= chapter.get('name') %> </option>
-            <% end %>
-          </select>
+    <form id="add_photodetail_form" enctype="multipart/form-data" class="form-horizontal">
+      
+      <div class="control-group">
+        <label class="control-label">chose chapter</label>
+        <div class="controls">
+          <div class="input">
+            <select id="new_photodetail_chapter" row="8">
+              <% for chapter in @chapters.models: %>
+              <option value=<%= chapter.id %>> <%= chapter.get('name') %> </option>
+              <% end %>
+            </select>
+          </div>
         </div>
       </div>
-    </div>
-    <form id="add_photodetail_form" enctype="multipart/form-data" class="form-horizontal">
+    
       <div class="control-group">
         <label class="control-label">檔案</label>
         <div class="controls">
