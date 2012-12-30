@@ -3,17 +3,27 @@
 <div class="body_container">
   <div class="story_container">
     <div class="introduction_video">
-      <iframe width="480" height="270" src="http://www.youtube.com/embed/fcmCpEpg0lQ" frameborder="0" allowfullscreen></iframe>
+      <iframe width="320" height="180" src="http://www.youtube.com/embed/fcmCpEpg0lQ" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div id="logo">
+      <img src="/assets/photos/Volife_logo.png">
     </div>
     <div class="introduction_bar">
-      <h1>Voice Life</h1>
-      <p>About Us</p>
-      <div class="button_outside_border_blue">
-        <div class="button_inside_border_blue">
-          <%= link_to "Sign in with Facebook", "/auth/facebook", id: "log_in" %>
+      <img src="/assets/photos/Volife_logo_name.png" style="height: 40px;">
+      <div id="about_us">
+        <p>使用LiveAll app輕鬆享受當下，即可隨時與好友重現記憶</p>
+      </div>
+      <div id="sign_in">
+        <div class="button_outside_border_blue">
+          <div class="button_inside_border_blue">
+            <%= link_to "Sign in with Facebook", "/auth/facebook", id: "log_in" %>
+          </div>
         </div>
+        <img src="/assets/photos/android.png" style="width: 80px; display: inline-block;">
       </div>
     </div>
+    <div style="width: 880px; height: 1px; background-color: black; margin: 5px auto;"></div>
+    <img src="/assets/photos/characteristics.JPG" style="width: 900px; margin: 40px 30px 60px 30px;">
   </div>
 </div><!-- End of Container -->
 

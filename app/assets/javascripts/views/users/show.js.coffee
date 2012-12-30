@@ -13,7 +13,7 @@ class Audiobook.Views.UserShow extends Backbone.View
 
   appendStory: (story) ->
     view = new Audiobook.Views.StoriesIndex(model: story)    
-    $('.thumbnails').append(view.render().el)
+    $('.event_container').append(view.render().el)
 
   
 

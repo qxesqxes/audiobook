@@ -4,11 +4,56 @@ body {
   margin-top: 50px;	
   margin-bottom: 50px; 
 }
-
-#current_user_picture {
-	width: 23px;
+div {
+  display: block;
 }
-
+//Nav Bar
+#current_user_picture {
+	width: 30px;
+  padding: 5px;
+}
+#current_user_name {
+  color: orange;  
+}
+.setup {
+  height: 25px;
+  width: 25px;
+  background-image: url(photos/Setup_btn.png);
+  background-size: cover;
+}
+.setup:hover {
+  height: 25px;
+  width: 25px;
+  background-image: url(photos/Setup_btn_hover.png);
+  background-size: cover;
+}
+.notification {
+  height: 24px; 
+  width: 36px;
+  background-image: url(photos/notification.png);
+  background-size: cover;
+}
+.notification:hover {
+  height: 24px; 
+  width: 36px;
+  background-image: url(photos/notification_hover.png);
+  background-size: cover;
+}
+.navbar_logo {
+  height: 25px;
+}
+.dropdown-menu{
+  background-color: orange;
+}
+.dropdown-menu .divider{
+  background-color: black;
+  color: black;
+}
+//footer
+footer{
+  display: block;
+  text-align: center;
+}
 
 
 //Welcome
@@ -17,21 +62,47 @@ body {
   margin: 0 auto;
 }
 
-.story_container{
-  margin-top: 160px;
+#story_container{
+  margin-top: 100px;
+  width: 960px;
+  border: 1px solid #000000;
+  background: white;
 }
 .introduction_video{
-  width: 480px;
-  float: left;
-  border: 5px solid #eeeeee;
+  width: 320px;
+  margin: 60px 20px 0 40px;
+  display: inline-block;
 }
 .introduction_bar{
-  width: 440px;
+  width: 300px;
   text-align: left;
-  float: right;
   padding: 0 0 20px 0;
-
+  margin-top: 60px;
+  display: inline-block;
+  vertical-align: top;
 }
+#logo{
+  width: 200px;
+  display: inline-block;
+  vertical-align: top;
+  margin: 60px 30px 0 0;
+}
+
+#about_us{
+  width: 245px;
+  height: 50px;
+  background-color: #b0c4de;
+  -webkit-border-radius: 5px; 
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 20px;
+  margin-top: 10px;
+}
+#about_us p{
+  text-align: left;
+}
+
 h1{
   font-size: 36px; 
   font-style: italic;
@@ -45,7 +116,8 @@ h1{
   font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
   font-weight:bold;
   font-size:12px;
-  margin:20px;
+  margin: 20px 20px 20px 0;
+  display: inline-block;
 }
 
 .button_inside_border_blue{
@@ -59,50 +131,182 @@ h1{
 div.button_inside_border_blue:active{
   background-color:#4f6aa3;
 }
-#log_in {
-  color: #fff;
+#sign_in{
+  width: 300px;
+}p{
+  text-align: center;
 }
 
 //User Page
+#story_container{
+  margin-top: 20px;
+  width: 960px;
+  border: 1px solid #000000;
+  background: white;
+}
 .stories_index{
   margin-top: 150px;
 }
-#theme_photo img{
-  border: 5px solid #eeeeee;
+.cover{
+  /*border: 5px solid #eeeeee;
   -webkit-box-shadow: 0px 1px 1px #ccc;
   -moz-box-shadow: 0px 1px 1px #ccc;
-  box-shadow: 0px 1px 1px #ccc;
-}
-#big_head{
-  border: 5px solid #eeeeee;
-  -webkit-box-shadow: 0px 1px 1px #ccc;
-  -moz-box-shadow: 0px 1px 1px #ccc;
-  box-shadow: 0px 1px 1px #ccc;
-  width:150px;
-  height:150px;
+  box-shadow: 0px 1px 1px #ccc;*/
   float: right;
+  width: 600px;
+  height: 200px;
+  position: relative;
+  top: 30px;
+  right: 30px;
+}
+.big_head{
+  width:130px;
+  height:130px;
+  margin: 30px 0 0 30px;
+  display: inline-block;
+}
+#user_info{
+  display: inline-block;
+  vertical-align: top;
+  margin: 30px 0 0 5px;
+}
+#name{
+  font-weight: bold;
+  font-size: 16px;
+}
+#status{
+  width: 120px;
+  height: 80px;
+  border: 1px solid #000000;
+  padding: 3px;
+  font-size: 10px;
+  margin-top: 20px;
 }
 .icon-play{
   vertical-align: middle;
 }
-
-.thumbnail {
-  //from bootstrap and add more one rule
-  height: 350px;
-}
 .event_pic {
   weight: 200px;
 }
-// .event{
-//   width: 200px;
-//   height: 200px;
-//   padding: 10px;
-//   margin: 2px;
-//   font-size: 20px;
-//   border: 2px dotted #eee;
-//   border-radius: 3px;
-//   float: left;
-// }
+.event_container{
+  text-align: left;
+}
+.event{
+  width: 250px;
+  height: 250px;
+  padding: 10px;
+  margin: 15px 0 15px 35px;
+  font-size: 20px;
+  border: 1px solid #000000;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  background-image: url(photos/clip_bk.png);
+  background-size: cover;
+}
+.event:hover{
+  background-image: url(photos/clip_bk_hover.png);
+}
+.icon_bar{
+  width: 250px;
+  font-size: 16px;
+  font-weight: bold;
+  position: absolute;
+  bottom: 15px;
+  text-align: center;
+}
+.icon{
+  display: inline-block;
+  margin: 0 5px 0 5px;
+}
+#info_bar{
+  width: 280px;
+  height: 120px;
+  margin: 20px 10px 0 25px;
+}
+.info{
+  background-image: url(photos/block.png);
+  background-size: 100% auto;
+  width: 80px;
+  height: 80px;
+  margin: 5px;
+  display: inline-block;
+  color: orange;
+}
+.info:hover{
+  background-image: url(photos/block_hover.png);
+  color: white;
+}
+.total_number{
+  font-size: 40px;
+  font-weight: bold;
+  /*color: orange;*/
+  text-align: center;
+  margin-top: 20px;
+}
+.type{
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  margin-top: 10px;
+}
+.event_title{
+  width: 272px;
+  font-weight: 120;
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  text-align: center;
+}
+.clip_cover{
+width: 250px; height: 180px; position: absolute; top: 50%; left:50%; margin-left: -125px; margin-top: -125px;
+background-size: cover;
+background-position: 50% 25%;
+}
+.clip_bar{
+  width: 880px;
+  height: 20px;
+  background-image: url(photos/clip_bar.png);
+  background-size: cover;
+  background-position: 50% 25%;
+  margin: 10px 30px 10px 30px;
+  -webkit-border-radius: 5px; 
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 10px;
+  color: white;
+}
+footer{
+  display: block;
+  text-align: center;
+}
+a{
+  color: black;
+}
+a:hover{
+  color: white;
+  text-decoration: none;
+}
+.add_clip{
+  width: 250px;
+  height: 250px;
+  padding: 10px;
+  margin: 15px 0 15px 35px;
+  font-size: 20px;
+  border: 1px solid #000000;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-image: url(photos/add_clip.png);
+}
+.add_clip:hover{
+  color: white;
+  background-image: url(photos/add_clip_hover.png);
+  background-size: cover;
+}
 
 //memory page
 .imgs_typeA{

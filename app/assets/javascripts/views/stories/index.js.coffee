@@ -1,7 +1,7 @@
 class Audiobook.Views.StoriesIndex extends Backbone.View
   template: JST['stories/index']
-  className: 'span3'
-  tagName: 'li'
+  className: 'event'
+  tagName: 'div'
 
   events:
     'click .remove_story': 'removeStory'

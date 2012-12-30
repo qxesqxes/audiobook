@@ -1,17 +1,19 @@
-<div id="theme_photo">
-  <img src="/assets/photos/theme.jpg">
+<div class="cover">
+  <img src="/assets/photos/cover.jpg">
 </div>
-<img id="big_head" src="/assets/photos/big_head.jpg">
-<div id="friends" class="btn">
-  <h4>Friends
-    <img src="/assets/rails.png">
-    <img src="/assets/photos/big-head/light.jpg">
-    <img src="/assets/photos/big-head/rain.jpg">
-    <img src="/assets/photos/big-head/donny.jpg">
-    <img src="/assets/photos/big-head/iris.jpg">            
-    <img src="/assets/photos/big-head/bear.png">
-  </h4>
-</div>    
-<h3><a href="#create_story_modal" role="button" class="btn btn-large btn-primary" data-toggle="modal">新增珍貴回憶</a></h3>
+<img class="big_head" src="/assets/photos/big_head.jpg">
+<div id="user_info">
+  <div id="name">Dodyee Liao</div>
+  <div id="status">
+    I love photography!
+  </div>
+</div>
+<div id="info_bar">
+  <div class="info"><div class="total_number">9</div><div class="type">收藏</div></div>
+  <div class="info"><div class="total_number">15</div><div class="type">朋友</div></div>
+  <div class="info"><div class="total_number">300</div><div class="type">音軌</div></div>
+</div>
+
+
 
 

@@ -1,38 +1,54 @@
 <div class="navbar navbar-fixed-top navbar-inverse" id="first-navbar">
 	<div class="navbar-inner">
 		<div class="container-fluid">
-			<%= link_to "AudioBook", current_user, class:"brand" %>		
+			<%= link_to image_tag("/assets/photos/Navbar_logo.png", :class=> 'navbar_logo') , current_user, class:"brand" %>		
 			<ul class="nav">						
 				<li class="divider-vertical"></li>					
-				<li><%= link_to "Mysapce", current_user %></li>
-				<li><a href="#">Friends</a></li>
+				<!-- <li><%= link_to "Mysapce", current_user %></li>
+				<li><a href="#">Friends</a></li> -->
 			</ul>			
 			<form class="navbar-search pull-left">
 				<input type="text" class="search-query" placeholder="Search">
 			</form>
 			<ul class="nav pull-right">
-				<li><a href="#">通知</a></li>
-				<li class=" divider-vertical"></li>
+				<li>
+					<a href="#">
+						<div class="notification"></div>
+					<!-- <img class="notification" src="/assets/photos/notification.png" onmouseover="this.src='/assets/photos/notification_hover.png'" onmouseout="this.src='/assets/photos/notification.png' "> -->
+					</a>
+				</li>
+				<li class="divider-vertical"></li>
+					<% if current_user %>						
+					<li>
+						<img src="<%= current_user.picture %>" id="current_user_picture" >							
+					</li>			
+					<li>
+						<%= link_to "#{current_user.name} ", current_user, :id=>"current_user_name" %>			
+					</li>		
+					<% else %>
+					<li>
+						<button class="btn btn-primary">
+						<%= link_to "Sign in with Facebook", "/auth/facebook", id: "log_in" %>
+						</button>
+					</li>
+					<% end %>				
+				<li class="divider-vertical"></li>
 				<li class="dropdown">
-					<div id="user_nav" class="btn-group pull-right">				
+					<div id="setup_nav" class="btn-group pull-right">				
 						<% if current_user %>
-							<a class="btn btn-inverse dropdown-toggle" data-toggle="dropdown" >
-								<img src=<%= current_user.picture %> id="current_user_picture">	
-								<%= current_user.name %>
-								<span class="caret"></span>					
+							<a class="dropdown-toggle" data-toggle="dropdown" >
+								<div class="setup"></div>
+								<!-- <img class="setup" src="/assets/photos/Setup_btn.png" onmouseover="this.src='/assets/photos/Setup_btn_hover.png'" onmouseout="this.src='/assets/photos/Setup_btn.png' ">			 -->						
 							</a>
 							<ul class="dropdown-menu">
-								<li><a href="#">Profile</a></li>
+								<li><a href="#" id="profile">Profile</a></li>
 								<li class="divider"></li>						
 								<li><%= link_to "Sign out", logout_path, id: "log_out" %></li>		
 							</ul>
-						<% else %>
-							<button class="btn btn-inverse">
-							<%= link_to "Sign in with Facebook", "/auth/facebook", id: "log_in" %>
-							</button>
+						<% else %>							
 						<% end %>				
 					</div>
-				</li>	
+				</li>
 			</ul>
 		</div>
 	</div>

@@ -1,12 +1,14 @@
-<li class="span3">
-  <a href="/stories/<%=  @story.get('id') %>" >
-    <div class="thumbnail">
-      <img src="http://i.imgur.com/D4Ecl.jpg" class="event_pic">
-      <h3>name: <%= @story.get("name") %><a href="#" class="remove_story">x</a></h3>
-      <p>description: <%= @story.get("description") %></p>	  
-    </div>
-  </a>
-</li>  
+<a href="/stories/<%=  @story.get('id') %>" >
+  <i style=" background-image: url(http://i.imgur.com/D4Ecl.jpg)" class="clip_cover"></i>
+  <div class="event_title"><%= @story.get("name") %><a href="#" class="remove_story">x</a></div>     
+  <div class="icon_bar">
+    <div class="icon"><i class="icon-camera"></i> 3</div>
+    <div class="icon"><i class="icon-user icon"></i> 10</div>
+    <div class="icon"><i class="icon-music icon"></i> 35</div>
+    <div class="icon"><i class="icon-eye-open icon"></i> 350</div>
+  </div>
+</a>
+
 
 
 

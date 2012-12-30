@@ -1,9 +1,16 @@
 <!-- <h1>welcome <%= image_tag(current_user.picture) %> <%= current_user.name %></h1> -->
 <div class="container">
-  <div class="user_container">User Loading</div>
-  <div class="stories_container">
-    <h2>Stories Index</h2>
-    <div class="thumbnails"></div>
+  <div id="story_container">
+    <div class="user_container">User Loading</div>
+
+    <div class="stories_container">
+      <div class="clip_bar">我的剪輯</div>
+      <div class="event_container">  
+        <a href="#create_story_modal" role="button" data-toggle="modal">        
+          <div class="add_clip"></div>  
+        </a>
+      </div>
+    </div>
   </div>
 </div>
 <div id="new_story_container">Loading</div>
